@@ -1,0 +1,74 @@
+{
+    "cod": "200",
+    "message": 0,
+    "cnt": 40,
+    "list": [
+        {
+            "dt": 1578409200,
+            "dt_txt": "2020-01-07 15:00:00",
+            "main": {
+                "temp": 284.92,
+                "temp_min": 283.58,
+                "temp_max": 284.92,
+                "pressure": 1020,
+                "humidity": 90
+            }
+        },
+        {
+            "dt": 1578409201,
+            "dt_txt": "2020-01-08 15:00:00",
+            "main": {
+                "temp": 285.92,
+                "temp_min": 283.58,
+                "temp_max": 284.92,
+                "pressure": 1020,
+                "humidity": 90
+            }
+        },
+        {
+            "dt": 1578409202,
+            "dt_txt": "2020-01-09 15:00:00",
+            "main": {
+                "temp": 286.92,
+                "temp_min": 283.58,
+                "temp_max": 284.92,
+                "pressure": 1020,
+                "humidity": 90
+            }
+        },
+        {
+            "dt": 1578409203,
+            "dt_txt": "2020-01-10 15:00:00",
+            "main": {
+                "temp": 287.92,
+                "temp_min": 283.58,
+                "temp_max": 284.92,
+                "pressure": 1020,
+                "humidity": 90
+            }
+        },
+        {
+            "dt": 1578409204,
+            "dt_txt": "2020-01-11 15:00:00",
+            "main": {
+                "temp": 288.92,
+                "temp_min": 283.58,
+                "temp_max": 284.92,
+                "pressure": 1020,
+                "humidity": 90
+            }
+        }                                
+    ],
+    "city": {
+        "id": 2643743,
+        "name": "London",
+        "coord": {
+            "lat": 51.5073,
+            "lon": -0.1277
+        },
+        "country": "GB",
+        "timezone": 0,
+        "sunrise": 1578384285,
+        "sunset": 1578413272
+    }
+}

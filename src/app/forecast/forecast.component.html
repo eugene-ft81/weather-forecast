@@ -1,0 +1,39 @@
+<div *ngIf='forecastPoints!==undefined && forecastCity!==undefined'>
+    <h1 class="center">Current weather forecast for {{ forecastCity.name }}, {{ forecastCity.country }}</h1>
+    <mat-card *ngFor='let point of forecastPoints' class="mat-elevation-z18">
+        <mat-card-header>
+            <mat-card-title>
+            <h2>{{point.dt*1000 | date:'MMM d, y, h:mm:ss a'}}</h2>
+            </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <table *ngIf='forecastPoints!==undefined'>
+                <tbody>
+                    <tr>
+                        <td>Temperature</td>
+                        <td>{{ 1.8*(point.main?.temp - 273.15) + 32 | number:'1.0-0'}}<sup>o</sup>C</td>
+                    </tr>
+                    <tr>
+                        <td>Minimum Temperature</td>
+                        <td>{{ 1.8 * (point.main?.temp_min - 273.15) + 32 | number:'1.0-0'}}<sup>o</sup>C</td>
+                    </tr>
+                    <tr>
+                        <td>Maximum Temperature</td>
+                        <td>{{ 1.8 * (point.main?.temp_max - 273.15) + 32 | number:'1.0-0'}}<sup>o</sup>C</td>
+                    </tr>
+                    <tr>
+                        <td>Pressure</td>
+                        <td>{{point.main?.pressure | number:'1.0-0'}}mb</td>
+                    </tr>
+                    <tr>
+                        <td>Humidity</td>
+                        <td> {{point.main?.humidity | number:'1.0-0'}}%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </mat-card-content>
+    </mat-card>
+</div>
+<div *ngIf='forecastPoints===undefined && error!==undefined'>
+    <h1 class="center">Failed to get weather forecast, {{ error }}</h1>
+</div>
